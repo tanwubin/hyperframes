@@ -6,7 +6,7 @@
  * looks like vs a png-sequence.
  */
 
-export type DistributedFormat = "mp4" | "mov" | "png-sequence";
+export type DistributedFormat = "mp4" | "mov" | "png-sequence" | "webm";
 
 export function formatExtension(format: DistributedFormat): string {
   switch (format) {
@@ -14,6 +14,8 @@ export function formatExtension(format: DistributedFormat): string {
       return ".mp4";
     case "mov":
       return ".mov";
+    case "webm":
+      return ".webm";
     case "png-sequence":
       return "";
     default: {
