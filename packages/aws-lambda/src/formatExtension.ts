@@ -6,7 +6,9 @@
  * looks like vs a png-sequence.
  */
 
-export type DistributedFormat = "mp4" | "mov" | "png-sequence" | "webm";
+import type { DistributedFormat } from "@hyperframes/producer/distributed";
+
+export type { DistributedFormat } from "@hyperframes/producer/distributed";
 
 export function formatExtension(format: DistributedFormat): string {
   switch (format) {
